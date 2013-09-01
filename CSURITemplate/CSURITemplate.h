@@ -54,7 +54,7 @@ extern NSString *const CSURITemplateErrorScanLocationErrorKey;
      assert([uri2 isEqualToString:@"/search?q=hal"]);
  
  */
-@interface CSURITemplate : NSObject
+@interface CSURITemplate : NSObject <NSCoding, NSCopying>
 
 ///---------------------------------
 /// @name Initializing URI Templates

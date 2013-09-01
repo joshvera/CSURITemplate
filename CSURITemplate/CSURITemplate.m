@@ -816,6 +816,26 @@ NSString *const CSURITemplateErrorScanLocationErrorKey = @"location";
 
 @implementation CSURITemplate
 
+- (void)encodeWithCoder:(NSCoder *)coder {
+	if (self.templateString != nil) [coder encodeObject:self.templateString forKey:@"templateString"];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+	NSString *templateString = [decoder decodeObjectForKey:@"templateString"];
+	return templateString != nil ? [self.class URITemplateWithString:templateString error:NULL] : nil;
+}
+
+- (instancetype)copyWithZone:(NSZone *)zone {
+	return self;
+}
+
+- (BOOL)isEqual:(CSURITemplate *)template {
+	if (self == template) return YES;
+	if (![template isMemberOfClass:self.class]) return NO;
+
+	return [self.templateString isEqualToString:template.templateString];
+}
+
 + (instancetype)URITemplateWithString:(NSString *)templateString error:(NSError **)error
 {
     CSURITemplate *URITemplate = [[self alloc] initWithTemplateString:templateString];
