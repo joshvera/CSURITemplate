@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BE84571516DCC1BE00DFD1C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE84571416DCC1BE00DFD1C0 /* Foundation.framework */; };
-		BE84571A16DCC1BE00DFD1C0 /* CSURITemplate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE84571916DCC1BE00DFD1C0 /* CSURITemplate.h */; };
 		BE84571C16DCC1BE00DFD1C0 /* CSURITemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84571B16DCC1BE00DFD1C0 /* CSURITemplate.m */; };
 		BE84572416DCC1BE00DFD1C0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE84572316DCC1BE00DFD1C0 /* SenTestingKit.framework */; };
 		BE84572616DCC1BE00DFD1C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE84572516DCC1BE00DFD1C0 /* UIKit.framework */; };
@@ -23,6 +22,7 @@
 		BE84574916DCC8B000DFD1C0 /* spec-examples-by-section.json in Resources */ = {isa = PBXBuildFile; fileRef = BE84574216DCC8B000DFD1C0 /* spec-examples-by-section.json */; };
 		BE84574A16DCC8B000DFD1C0 /* spec-examples.json in Resources */ = {isa = PBXBuildFile; fileRef = BE84574316DCC8B000DFD1C0 /* spec-examples.json */; };
 		BE84574B16DCC8B000DFD1C0 /* transform-json-tests.xslt in Resources */ = {isa = PBXBuildFile; fileRef = BE84574416DCC8B000DFD1C0 /* transform-json-tests.xslt */; };
+		D1F368D518049E9900E770BD /* CSURITemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BE84571916DCC1BE00DFD1C0 /* CSURITemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +34,6 @@
 			remoteInfo = CSURITemplate;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		BE84570F16DCC1BE00DFD1C0 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				BE84571A16DCC1BE00DFD1C0 /* CSURITemplate.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BE84571116DCC1BE00DFD1C0 /* libCSURITemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCSURITemplate.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +57,22 @@
 		BE84576616DF64AB00DFD1C0 /* CSURITemplate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; indentWidth = 2; path = CSURITemplate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BE84576716DF7AF900DFD1C0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		BE84576816DF7AF900DFD1C0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D1F368C018049E2700E770BD /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		D1F368C218049E2700E770BD /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		D1F368C318049E2700E770BD /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		D1F368C418049E2700E770BD /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		D1F368C518049E2700E770BD /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		D1F368C718049E2700E770BD /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		D1F368C818049E2700E770BD /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		D1F368CA18049E2700E770BD /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		D1F368CB18049E2700E770BD /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		D1F368CC18049E2700E770BD /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		D1F368CE18049E2700E770BD /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		D1F368CF18049E2700E770BD /* Mac-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		D1F368D018049E2700E770BD /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		D1F368D118049E2700E770BD /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		D1F368D218049E2700E770BD /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		D1F368D318049E2700E770BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 				BE84571616DCC1BE00DFD1C0 /* CSURITemplate */,
 				BE84572B16DCC1BF00DFD1C0 /* CSURITemplateTests */,
 				BE84571316DCC1BE00DFD1C0 /* Frameworks */,
+				D1F368BE18049E2700E770BD /* Configuration */,
 				BE84571216DCC1BE00DFD1C0 /* Products */,
 				BE84576616DF64AB00DFD1C0 /* CSURITemplate.podspec */,
 				BE84576716DF7AF900DFD1C0 /* README.md */,
@@ -178,7 +182,82 @@
 			path = "uritemplate-test";
 			sourceTree = "<group>";
 		};
+		D1F368BE18049E2700E770BD /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D1F368BF18049E2700E770BD /* Base */,
+				D1F368C918049E2700E770BD /* iOS */,
+				D1F368CD18049E2700E770BD /* Mac OS X */,
+				D1F368D318049E2700E770BD /* README.md */,
+			);
+			name = Configuration;
+			path = External/xcconfigs;
+			sourceTree = "<group>";
+		};
+		D1F368BF18049E2700E770BD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D1F368C018049E2700E770BD /* Common.xcconfig */,
+				D1F368C118049E2700E770BD /* Configurations */,
+				D1F368C618049E2700E770BD /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D1F368C118049E2700E770BD /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				D1F368C218049E2700E770BD /* Debug.xcconfig */,
+				D1F368C318049E2700E770BD /* Profile.xcconfig */,
+				D1F368C418049E2700E770BD /* Release.xcconfig */,
+				D1F368C518049E2700E770BD /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		D1F368C618049E2700E770BD /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				D1F368C718049E2700E770BD /* Application.xcconfig */,
+				D1F368C818049E2700E770BD /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		D1F368C918049E2700E770BD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D1F368CA18049E2700E770BD /* iOS-Application.xcconfig */,
+				D1F368CB18049E2700E770BD /* iOS-Base.xcconfig */,
+				D1F368CC18049E2700E770BD /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D1F368CD18049E2700E770BD /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				D1F368CE18049E2700E770BD /* Mac-Application.xcconfig */,
+				D1F368CF18049E2700E770BD /* Mac-Base.xcconfig */,
+				D1F368D018049E2700E770BD /* Mac-DynamicLibrary.xcconfig */,
+				D1F368D118049E2700E770BD /* Mac-Framework.xcconfig */,
+				D1F368D218049E2700E770BD /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D1F368D418049E8E00E770BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F368D518049E9900E770BD /* CSURITemplate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		BE84571016DCC1BE00DFD1C0 /* CSURITemplate */ = {
@@ -187,7 +266,7 @@
 			buildPhases = (
 				BE84570D16DCC1BE00DFD1C0 /* Sources */,
 				BE84570E16DCC1BE00DFD1C0 /* Frameworks */,
-				BE84570F16DCC1BE00DFD1C0 /* CopyFiles */,
+				D1F368D418049E8E00E770BD /* Headers */,
 			);
 			buildRules = (
 			);
@@ -319,6 +398,7 @@
 /* Begin XCBuildConfiguration section */
 		BE84573416DCC1BF00DFD1C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F368C218049E2700E770BD /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -349,6 +429,7 @@
 		};
 		BE84573516DCC1BF00DFD1C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F368C418049E2700E770BD /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -372,32 +453,29 @@
 		};
 		BE84573716DCC1BF00DFD1C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F368CC18049E2700E770BD /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				DSTROOT = /tmp/CSURITemplate.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSURITemplate/CSURITemplate-Prefix.pch";
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PRODUCT_NAME = CSURITemplate;
 			};
 			name = Debug;
 		};
 		BE84573816DCC1BF00DFD1C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F368CC18049E2700E770BD /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				DSTROOT = /tmp/CSURITemplate.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSURITemplate/CSURITemplate-Prefix.pch";
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PRODUCT_NAME = CSURITemplate;
 			};
 			name = Release;
 		};
 		BE84573A16DCC1BF00DFD1C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F368CA18049E2700E770BD /* iOS-Application.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -413,6 +491,7 @@
 		};
 		BE84573B16DCC1BF00DFD1C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F368CA18049E2700E770BD /* iOS-Application.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",

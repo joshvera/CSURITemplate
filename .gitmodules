@@ -1,3 +1,6 @@
 [submodule "CSURITemplateTests/uritemplate-test"]
 	path = CSURITemplateTests/uritemplate-test
 	url = https://github.com/uri-templates/uritemplate-test.git
+[submodule "External/xcconfigs"]
+	path = External/xcconfigs
+	url = https://github.com/jspahrsummers/xcconfigs
